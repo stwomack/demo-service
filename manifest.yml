@@ -1,0 +1,12 @@
+---
+applications:
+  - name: demo-service	
+    path: target/demo-0.0.1-SNAPSHOT.jar
+    memory: 512MB
+    instances: 1
+    buildpack: java_buildpack_offline
+    services:
+      - my-rabbitmq
+      - my-mysql
+    env:
+      SPRING_PROFILES_ACTIVE: dev
