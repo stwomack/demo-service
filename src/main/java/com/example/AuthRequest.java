@@ -4,9 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-/**
- * Created by swomack on 6/6/16.
- */
 @Entity
 public class AuthRequest {
     @Id
