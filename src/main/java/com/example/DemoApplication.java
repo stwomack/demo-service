@@ -30,7 +30,5 @@ public class DemoApplication {
                     .forEach(name -> reservationRepository.save(new AuthRequest(name, new Random().nextBoolean())));
             reservationRepository.findAll().forEach(System.out::println);
         };
-
     }
-
 }
