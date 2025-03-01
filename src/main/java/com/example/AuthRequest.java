@@ -1,8 +1,9 @@
 package com.example;
 
-import javax.persistence.Entity;
+import org.hibernate.annotations.Entity;
+import org.springframework.data.annotation.Id;
+
 import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 @Entity
 public class AuthRequest {
